@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #222ff0;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Foro_Controlador">
+   <children>
+      <Button fx:id="Volver_inicio" layoutX="37.0" layoutY="32.0" mnemonicParsing="false" onAction="#Volver_inicio" text="Volver al Inicio" />
+      <Button fx:id="C_foro" layoutX="275.0" layoutY="326.0" mnemonicParsing="false" onAction="#Crear" text="Crear foro" />
+      <TextField fx:id="F_Nombre" layoutX="300.0" layoutY="141.0" prefHeight="25.0" prefWidth="194.0" />
+      <TextField fx:id="F_tema" layoutX="300.0" layoutY="212.0" prefHeight="25.0" prefWidth="194.0" />
+      <Label layoutX="84.0" layoutY="145.0" text="Nombre del foro" textFill="#f5f107">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="214.0" text="Tema" textFill="#f5f107">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lab1" layoutX="261.0" layoutY="286.0" />
+   </children>
+</AnchorPane>

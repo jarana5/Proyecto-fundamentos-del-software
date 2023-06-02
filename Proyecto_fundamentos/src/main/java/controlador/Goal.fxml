@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFD700 #ef700;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Goal_Controlador">
+   <children>
+      <Label layoutX="58.0" layoutY="64.0" text="Metas:">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Me_text" layoutX="155.0" layoutY="53.0" prefHeight="294.0" prefWidth="416.0" />
+      <Button fx:id="Me_Incio" layoutX="484.0" layoutY="361.0" mnemonicParsing="false" onAction="#Volver_inicio" text="Volver al inicio" />
+      <Button fx:id="Me_Nueva" layoutX="42.0" layoutY="262.0" mnemonicParsing="false" onAction="#Pantalla_Nueva_Meta" text="Nueva meta" />
+      <Label layoutX="33.0" layoutY="223.0" text="Añadir meta">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

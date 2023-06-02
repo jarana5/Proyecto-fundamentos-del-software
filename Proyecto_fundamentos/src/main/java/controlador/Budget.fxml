@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Budget_Controlador">
+   <children>
+      <ImageView fitHeight="139.0" fitWidth="152.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../Downloads/descarga%20(3).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="233.0" layoutY="30.0" prefHeight="55.0" prefWidth="221.0" text="Presupuesto " textFill="#a62626">
+         <font>
+            <Font name="Arial" size="36.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="143.0" prefHeight="257.0" prefWidth="600.0" style="-fx-background-color: #FFD700 #ef700;">
+         <children>
+            <Label layoutX="47.0" layoutY="63.0" style="-fx-background-color: trans;" text="Su presupuesto actual es de: ">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Pr_presupuesto" layoutX="294.0" layoutY="51.0" prefHeight="45.0" prefWidth="260.0" />
+            <Label layoutX="41.0" layoutY="149.0" text="Añadir o Eliminar presupuestos">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="Pr_admPre" layoutX="316.0" layoutY="147.0" mnemonicParsing="false" onAction="#Administrar" text="Administrar Presupuestos" textFill="#f80303" />
+            <Button fx:id="Pr_principal" layoutX="60.0" layoutY="204.0" mnemonicParsing="false" onAction="#Inicio" text="Ir al inicio" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

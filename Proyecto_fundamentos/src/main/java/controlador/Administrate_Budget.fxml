@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Adm_budget_Controlador">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #10FF50;">
+         <children>
+            <Label layoutX="49.0" layoutY="40.0" text="Añadir Presupuesto">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="A_Pres" layoutX="70.0" layoutY="119.0" prefHeight="52.0" prefWidth="170.0" promptText="Presupuesto a añadir" />
+            <Button fx:id="Ad_add" layoutX="90.0" layoutY="236.0" mnemonicParsing="false" onAction="#Add_presupuesto" prefHeight="25.0" prefWidth="130.0" text="Añadir Presupuesto" />
+            <Label fx:id="Ad_label1" layoutX="129.0" layoutY="298.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="300.0" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #0480FF;">
+         <children>
+            <Label layoutX="45.0" layoutY="38.0" text="Eliminar Presupuesto">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="A_Eliminar" layoutX="78.0" layoutY="116.0" prefHeight="52.0" prefWidth="164.0" promptText="Presupuesto a eleminar" />
+            <Button fx:id="Ad_eliminar" layoutX="85.0" layoutY="238.0" mnemonicParsing="false" onAction="#Elimiar_Presupuesto" prefHeight="25.0" prefWidth="130.0" text="Eliminar Presupuesto" />
+            <Label fx:id="Ad_label2" layoutX="136.0" layoutY="306.0" />
+            <Button fx:id="Ad_Regresar" layoutX="-26.0" layoutY="323.0" mnemonicParsing="false" onAction="#Regresar_Inicio" text="Regresar" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

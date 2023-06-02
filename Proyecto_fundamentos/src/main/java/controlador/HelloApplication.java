@@ -1,4 +1,4 @@
-package Vista;
+package controlador;
 
 
 import javafx.application.Application;

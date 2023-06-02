@@ -71,6 +71,14 @@ public class Sing_up_Controlador {
                Re_Label.setText("El usuario ya esta en uso");
                return;
            }
+           if(Password.length()<8){
+               Re_Label.setText("La contraseña tiene que tener 8 o mas caracteres");
+               return;
+           }
+           if(!Name.toLowerCase().endsWith("@gmail.com")){
+               Re_Label.setText("Cuenta no valida");
+               return;
+           }
            usuarios.User(Name,Password);
            usuarios.InsertUser();
            Re_Label.setText("Usuario inscrito exitosamente");
